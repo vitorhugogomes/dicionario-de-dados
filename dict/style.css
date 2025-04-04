@@ -3,6 +3,11 @@ header {
     color: white;
 }
 
+nav#menu {
+    posittion: sticky;
+    top: 0;
+}
+
 main {
     padding: 15px;
     width: 100%;
