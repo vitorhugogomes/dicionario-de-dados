@@ -1,0 +1,224 @@
+main {
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    justify-content: center;
+    text-align: justify;
+}
+
+@media (max-width: 1000px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+main > article {
+    margin: 5px;
+    width: 40%;
+    padding: 15px;
+}
+
+@media (max-width: 1000px) {
+    main > article {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 1001px) {
+    main > article#texto-central {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+    }
+}
+
+main > article > h1 {
+    font-size: 36.1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main > article p {
+    font-size: 18px;
+}
+
+main > article p#etec-aracatuba {
+    margin-top: 15px;
+}
+
+div#imagem-escola-1, div#imagem-escola-2 {
+    text-align: center;
+    display: none;
+    width: 75%;
+    margin: 28px auto;
+    font-size: clamp(10px, 3.3vw, 18px);
+    color: var(--cor5);
+    font-style: italic;
+}
+
+div#imagem-escola-1 > img {
+    width: 100%;
+    border: 2px solid var(--cor5);
+}
+
+div#imagem-escola-2 > img{
+    width: 100%;
+    border: 2px solid var(--cor5);
+}
+
+@media (max-width: 1000px) {
+    div#imagem-escola-1 {
+        display: block;
+    }
+}
+
+@media (min-width: 1001px) {
+    div#imagem-escola-2 {
+        display: block;
+    }
+}
+
+ul {
+    padding: 20px;
+}
+
+@media (max-width: 1000px) {
+    ul {
+        padding: 0;
+    }
+}
+
+main#segundo-conteudo {
+    background-image: linear-gradient(to right, var(--cor4), var(--cor5));
+    height: 814px;
+    align-items: center;
+}
+
+@media (max-width: 1413px) {
+    main#segundo-conteudo {
+        flex-direction: column;
+        height: auto;
+        font-size: 17.5px;
+    }
+}
+
+main#segundo-conteudo > img {
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    margin: 0 112px 0 36px;
+    box-shadow: 
+    24px 8px 0 rgba(144, 3, 6, 0.6),
+    71px -46px rgba(144, 3, 6, 0.6),
+    8px 79px rgba(144, 3, 6, 0.6),
+    -28px -46px rgba(144, 3, 6, 0.6),
+    20px 20px rgba(144, 3, 6, 0.6),
+    -20px -20px rgba(144, 3, 6, 0.6);
+}
+
+@media (max-width: 1000px) {
+    main#segundo-conteudo > img {
+        width: 250px;
+        height: 250px;
+        margin: 50px 0 50px 0;
+        box-shadow: 
+        12px 4px 0 rgba(144, 3, 6, 0.6),
+        35.5px -23px 0 rgba(144, 3, 6, 0.6),
+        4px 39.5px 0 rgba(144, 3, 6, 0.6),
+        -14px -23px 0 rgba(144, 3, 6, 0.6),
+        20px 20px 0 rgba(144, 3, 6, 0.6),
+        -20px -20px 0 rgba(144, 3, 6, 0.6);
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1413px) {
+    main#segundo-conteudo > img {
+        margin: 100px 0;
+    }
+}
+
+main#segundo-conteudo > p {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+main#terceiro-conteudo {
+    background-image: linear-gradient(to right, var(--cor2), var(--cor6));
+    height: 814px;
+    align-items: center;
+}
+
+@media (max-width: 1413px) {
+    main#terceiro-conteudo {
+        flex-direction: column;
+        height: auto;
+        font-size: 17.5px;
+    }
+}
+
+main#terceiro-conteudo > img {
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    margin: 0 112px 0 36px;
+    box-shadow:
+    24px 8px 0 rgba(248, 220, 191, 0.6),
+    71px -46px rgba(248, 220, 191, 0.6),
+    8px 79px rgba(248, 220, 191, 0.6),
+    -28px -46px rgba(248, 220, 191, 0.6),
+    20px 20px rgba(248, 220, 191, 0.6),
+    -20px -20px rgba(248, 220, 191, 0.6);
+}
+
+@media (max-width: 1000px) {
+    main#terceiro-conteudo > img {
+        width: 250px;
+        height: 250px;
+        margin: 50px 0 50px;
+        box-shadow: 
+        12px 4px 0 rgba(248, 220, 191, 0.6),
+        35.5px -23px 0 rgba(248, 220, 191, 0.6),
+        4px 39.5px 0 rgba(248, 220, 191, 0.6),
+        -14px -23px 0 rgba(248, 220, 191, 0.6),
+        20px 20px 0 rgba(248, 220, 191, 0.6),
+        -20px -20px 0 rgba(248, 220, 191, 0.6);
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1413px) {
+    main#terceiro-conteudo > img {
+        margin: 100px 0;
+    }
+}
+
+main#terceiro-conteudo > p {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 6vh;   
+}
+
+main#terceiro-conteudo > p > span, main#segundo-conteudo > p > span {
+    font-weight: normal;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    
+
+}
+
+footer > p {
+    padding: 22px;
+    font-size: clamp(10px, 3.3vw, 18px);
+}
