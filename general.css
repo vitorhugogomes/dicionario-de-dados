@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "TypeWriter";
+    src: url("fontes/JMH\ Typewriter.otf") format("opentype"),
+         url("fontes/JMH\ Typewriter.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Romans";
+    src: url("fontes/ROMANS.otf") format("opentype"),
+         url("fontes/ROMANS.ttf") format("truetype"),
+         url("fontes/ROMANS.woff") format("woff");
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: #900306;
+    --cor2: #9b0202;
+    --cor3: #f8dcbf;
+    --cor4: #4a4a4a;
+    --cor5: #666;
+    --cor6: #c43f3f;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: var(--cor1);
+    justify-content: center;
+    margin-bottom: 2px;
+    padding: 10px;
+}
+
+header > img {
+    width: 650px;
+}
+
+@media (max-width: 1000px) {
+    header > img {
+        width: 100%;
+    }
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--cor2);
+}
+
+nav img {
+    width: 10%;
+    padding: 5px 0;
+}
+
+@media (max-width: 1000px) {
+    nav img {
+        width: 19%;
+    }
+}
