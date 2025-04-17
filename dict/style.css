@@ -1,0 +1,62 @@
+header {
+    align-items: center;
+    color: white;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+main {
+    padding: 15px;
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "TypeWriter";
+    font-size: 44px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p {
+    font-family: "TypeWriter";
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 33px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+article {
+    display: flex;
+    background-color: rgba(115, 115, 115, 0.7);
+    padding: 20px;
+    align-items:center;
+    margin: 30px;
+}
+
+article > h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(36px, 7vw, 7vw);
+}
+
+article li {
+    margin: 15px;
+}
+
+li > p {
+    font-size: clamp(11px, 1.4vw, 1.4vw);
+}
+
+p > strong {
+    font-family: serif;
+}
